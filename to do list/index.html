@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas Avanzado</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+    <h1>Gestor de Tareas</h1>
+    <div class="task-form">
+        <input type="text" id="taskTitle" placeholder="Título de la tarea" required />
+        <textarea id="taskDescription" placeholder="Descripción de la tarea"></textarea>
+        <label for="taskPriority">Complejidad:</label>
+        <select id="taskPriority">
+            <option value="Baja">Baja</option>
+            <option value="Media">Media</option>
+            <option value="Alta">Alta</option>
+        </select>
+       
+    <label for="taskStartDate">Fecha de Inicio:</label>
+    <input type="date" id="taskStartDate" />
+
+    <label for="taskDueDate">Fecha de Vencimiento:</label>
+    <input type="date" id="taskDueDate" />
+        <input type="text" id="taskTags" placeholder="Etiquetas (opcional)" />
+        <button id="addTaskButton">Agregar Tarea</button>
+    </div>
+    <h2>Tareas en Proceso</h2>
+    <ul id="taskList"></ul>
+    <h2>Tareas Completadas</h2>
+    <ul id="completedTaskList"></ul>
+    <button id="clearBoardButton">Limpiar Tablero</button>
+
+    <!-- Botón de la Papelera -->
+    <div class="trash-bin">
+        <a href="papelera.html" target="_blank">
+            <img src="img\basura.png" alt="Papelera" class="trash-bin-icon">
+        </a>
+    </div>
+
+
+    <script src="js\script.js"></script>
+</body>
+
+</html>

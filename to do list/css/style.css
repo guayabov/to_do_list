@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input, select, textarea, button {
+    margin: 5px;
+    padding: 8px;
+    width: 300px;
+}
+
+#taskList, #completedTaskList {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+.task-item {
+    background-color: #ffffff;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    /* Añadir color de fondo translúcido según la prioridad */
+}
+.task-item.baja {
+    background-color: rgba(144, 238, 144, 0.3); /* Verde translúcido */
+}
+
+.task-item.media {
+    background-color: rgba(255, 255, 102, 0.3); /* Amarillo translúcido */
+}
+
+.task-item.alta {
+    background-color: rgba(255, 99, 71, 0.3); /* Rojo translúcido */
+}
+
+.task-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: #5c85ff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: #1c5cff;
+}
+
+#clearBoardButton {
+    display: block;
+    margin: 20px auto;
+}
+
+.trash-bin {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.trash-bin-icon {
+    width: 50px;
+    cursor: pointer;
+}
+#clearTrashButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff5c5c;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#clearTrashButton:hover {
+    background-color: #ff1c1c;
+}
+.history-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.history-icon {
+    width: 50px;
+    cursor: pointer;
+}
+.task-form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.task-form input, .task-form select, .task-form textarea {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
